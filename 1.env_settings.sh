@@ -28,3 +28,27 @@ git init
 #2-2) 원격지 주소를 추가 
 git remote add origin 원격지 주소
 
+#branch 메인 생성 및 변경   
+    git checkout -b main
+
+#다른 사람의 레포지토리에서 클론을 받아 나의 repo로 올리기
+#1.커밋 이력 그대로 가져가기
+git clone 남의레포주소 
+git remote set-url origin 내레포주소 #원격지 주소 변경  
+git push origin main
+
+#2.커밋 이력 없이 가져가기
+1. 내 레포 만들기 
+.git 폴더 삭제 
+git init 
+git remote add origin 상대원격지 주소 
+git checkout -b main
+git add .
+git commit -m "@@"
+git push origin main+
+
+
+
+
+
+
